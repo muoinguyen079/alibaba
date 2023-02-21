@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background: #111;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ 
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:consolas;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+.ani {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  position: relative;
+}
+.btn3 {
+    margin-top: 200px;  
+    padding: 2px;
+    outline: 0;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#fdde5c),
+      color-stop(#f8ab5e),
+      color-stop(#f56a62),
+      color-stop(#a176c8),
+      color-stop(#759beb),
+      color-stop(#65beb3),
+      to(#70db96)
+    );
+    background: linear-gradient(
+      to right,
+      #fdde5c,
+      #f8ab5e,
+      #f56a62,
+      #a176c8,
+      #759beb,
+      #65beb3,
+      #70db96
+    );
+    border-radius: 30px;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+  }
+ .btn3 > span {
+    display: contents;
+    padding: 10px 20px;
+    font-size: 17px;
+    background: #0e0e10;
+    border-radius: 30px;
+  }
+  @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
